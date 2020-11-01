@@ -33,13 +33,16 @@ _پی اچ پی: از راه درستش_ به زبان‌های زیادی تر�
 * [简体中文](https://laravel-china.github.io/php-the-right-way/)
 * [繁體中文](https://laravel-taiwan.github.io/php-the-right-way)
 
-## Book
+## کتاب
 
-The most recent version of _PHP: The Right Way_ is also available in PDF, EPUB and MOBI formats. [Go to Leanpub][1]
+آخرین نسخه‌ی _پچپ: از راه درستش_ در فرمت‌های PDF، EPUB و MOBI در دسترس است. [بروید به Leanpub][1].
 
-## How to Contribute
+## مشارکت کنید
 
-Help make this website the best resource for new PHP programmers! [Contribute on GitHub][2]
+کمک کنید این وبسایت بهترین منبع برای تازه‌کارهای پچپ باشد. [در گیت‌هاب کمک کنید][2].
+
+می‌توانید از طریق صفحه‌ی من به نسخه‌ی فارسی این وبسایت هم کمک کنید. [به صفحه من در گیت‌هاب بروید.][3]
 
 [1]: https://leanpub.com/phptherightway
 [2]: https://github.com/codeguy/php-the-right-way/tree/gh-pages
+[3]: https://github.com/pedrambehroozi/php-the-right-way
