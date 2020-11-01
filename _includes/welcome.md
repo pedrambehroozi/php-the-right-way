@@ -1,24 +1,15 @@
-# Welcome
+# خوش آمدید
 
-There's a lot of outdated information on the Web that leads new PHP users astray,
-propagating bad practices and insecure code. _PHP: The Right Way_ is an easy-to-read,
-quick reference for PHP popular coding standards, links to authoritative tutorials
-around the Web and what the contributors consider to be best practices at the present
-time.
+دیتای تاریخ‌گذشته‌ی زیادی روی وب وجود دارد که کاربران تازه‌ی PHP را سردرگم می‌کنند، عادت‌های بد به آنها می‌آموزند و کدهای ناامن به بار می‌آورند. _پی اچ پی: از راه درستش_ یک منبع سریع و آسان برای استانداردهای کدنویسی پی اچ پی است، به تاتوریال‌های موثق لینک می‌دهد
+و چیزهایی را معرفی می‌کند که به نظر گردآورندگان عادت‌های خوب و استاندارد برنامه‌نویسی هستند.
 
-_There is no canonical way to use PHP_. This website aims to introduce new PHP
-developers to some topics which they may not discover until it is too late, and aims
-to give seasoned pros some fresh ideas on those topics they've been doing for years
-without ever reconsidering. This website will also not tell you which tools to use, but
-instead offer suggestions for multiple options, when possible explaining the differences
-in approach and use-case.
+_هیچ راه سرراستی برای استفاده از پی اچ پی وجود ندارد_. این وبسایت سعی می‌کند برنامه‌نویس‌های تازه‌کار را با عنوان‌هایی آشنا کند که ممکن است بعدها وقتی خیلی دیر شده باشد کشف‌شان کنند. و سعی می‌کند به حرفه‌ای‌ها هم ایده‌های جدیدی بدهد برای بهبود کدهایشان. این وبسایت به شما نمی‌گوید از چه ابزاری استفاده کنید، در عوض پیشنهادهایی می‌دهد و هر وقت ممکن بود می‌گوید که فرق بین این پیشنهادها چیست.
 
-This is a living document and will continue to be updated with more helpful information
-and examples as they become available.
+این یک منبع بروز و زنده است و اطلاعات مفید و مثال‌های جدید را به طور مداوم در اختیارتان قرار می‌دهد.
 
-## Translations
+## ترجمه‌ها
 
-_PHP: The Right Way_ is translated into many different languages:
+_پی اچ پی: از راه درستش_ به زبان‌های زیادی ترجمه شده است:
 
 * [English](http://www.phptherightway.com)
 * [Español](http://phpdevenezuela.github.io/php-the-right-way)
