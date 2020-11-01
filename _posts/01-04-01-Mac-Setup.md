@@ -3,61 +3,59 @@ isChild: true
 anchor:  mac_setup
 ---
 
-## Mac Setup {#mac_setup_title}
+## نصب روی مک {#mac_setup_title}
 
-macOS comes prepackaged with PHP but it is normally a little behind the latest stable release. There are multiple ways to install the latest PHP version on macOS.
+سیستم عامل مک پچپ را به صورت پیش‌فرض نصب دارد ولی معمولاً نسخه‌ای که ارائه می‌دهد کمی قدیمی است. چندین راه برای نصب آخرین نسخه‌ی پچپ روی مک وجود دارد.
 
-### Install PHP via Homebrew
+### نصب با Homebrew
 
-[Homebrew] is a package manager for macOS that helps you easily install PHP and various extensions. The Homebrew core repository provides "formulae" for PHP 5.6, 7.0, 7.1, 7.2, 7.3 and 7.4. Install the latest version with this command:
+[Homebrew] یک مدیر پکیج برای مک است که کمک می‌کند پچپ و افزونه‌های آن را به راحتی نصب کنید.
+ریپازیتوری اصلی Homebrew یک سری «فرمول» برای پچپ 5.6، 7.0، 7.1، 7.2، 7.3 و 7.4 دارد. با این دستور آخرین نسخه را نصب کنید:
 
-```
-brew install php@7.4
-```
+{% highlight console %}
+> brew install php@7.4
+{% endhighlight %}
 
-You can switch between Homebrew PHP versions by modifying your `PATH` variable. Alternatively, you can use [brew-php-switcher][brew-php-switcher] to switch PHP versions automatically.
+می‌توانید با تغییر متغیر `PATH` بین نسخه‌های پچپ جابجا شوید. همچنین می‌توانید از [brew-php-switcher][brew-php-switcher] استفاده کنید تا به صورت خودکار از نسخه‌های گوناگون پچپ استفاده کنید.
 
-### Install PHP via Macports
+### نصب با MacPorts
 
-The [MacPorts] Project is an open-source community initiative to design an
-easy-to-use system for compiling, installing, and upgrading either
-command-line, X11 or Aqua based open-source software on the OS X operating
-system.
+پروژه‌ی [MacPorts] یک پروژه‌ی متن‌باز است که سیستم ساده‌ای طراحی کرده برای کامپایل کردن، نصب و ارتقای کامندلاین، X11 یا نرم‌افزارهای متن‌باز مبتنی بر Aqua روی سیستم عامل مک.
 
-MacPorts supports pre-compiled binaries, so you don't need to recompile every
-dependency from the source tarball files, it saves your life if you don't
-have any package installed on your system.
+MacPorts از باینری‌های از پیش کامپایل شده پشتیبانی می‌کند؛ بنابراین لازم نیست هر دفعه پکیج‌ها را از سورس tarballشان کامپایل کنید.
+اگر هیچ پکیجی روی کامپیوترتان نصب نیست MacPorts زندگی‌تان را نجات می‌دهد.
 
-At this point, you can install `php54`, `php55`, `php56`, `php70`, `php71`, `php72`, `php73` or `php74` using the `port install` command, for example:
+در حال حاضر می‌توانید `php54`، `php55`، `php56`، `php70`، `php71`، `php72`، `php73` یا `php74` را با استفاده از دستور `port install` نصب کنید. برای مثال:
 
-    sudo port install php56
-    sudo port install php74
+{% highlight console %}
+> sudo port install php56
+> sudo port install php74
+{% endhighlight %}
 
-And you can run `select` command to switch your active PHP:
+و می‌توانید با دستور `select` بین این نسخه‌ها جابجا شوید:
 
-    sudo port select --set php php74
+{% highlight console %}
+> sudo port select --set php php74
+{% endhighlight %}
 
-### Install PHP via phpbrew
+### نصب با phpbrew
 
-[phpbrew] is a tool for installing and managing multiple PHP versions. This can be really useful if two different
-applications/projects require different versions of PHP, and you are not using virtual machines.
+[phpbrew] ابزاری است برای نصب و مدیریت چندین نسخه‌ی پچپ. اگر دو یا چند پروژه دارید که به نسخه‌های مختلفی از پچپ نیاز دارند و از ماشین‌های مجازی هم استفاده نمی‌کنید این ابزار می‌تواند خیلی کمک‌تان کند.
 
-### Install PHP via Liip's binary installer
+### نصب با نصب‌کننده‌ی باینری Liip
 
-Another popular option is [php-osx.liip.ch] which provides one liner installation methods for versions 5.3 through 7.3.
-It doesn't overwrite the PHP binaries installed by Apple, but installs everything in a separate location (/usr/local/php5).
+یک گزینه‌ی محبوب دیگر [php-osx.liip.ch] است که با یک خط دستور می‌تواند نسخه‌های 5.3 تا 7.3 پچپ را برایتان نصب کند.
+اگر قبلا پچپ را نصب کرده‌اید، این ابزار آنها را جایگزین نمی‌کند بلکه در محل جدیدی (`/usr/lib/php5`) قرار می‌گیرد.
 
-### Compile from Source
+### کامپایل کردن کد
 
-Another option that gives you control over the version of PHP you install, is to [compile it yourself][mac-compile].
-In that case be sure to have installed either [Xcode][xcode-gcc-substitution] or Apple's substitute
-["Command Line Tools for XCode"] downloadable from Apple's Mac Developer Center.
+گزینه‌ی دیگر که به شما کمک می‌کند نسخه‌ی پچپ مورد نظرتان را نصب کنید، [کامپایل کردن کد][mac-compile] است.
+اگر از این روش استفاده می‌کنید حتما [Xcode][xcode-gcc-substitution] یا جایگزین اپلی‌اش ["Command Line Tools for XCode] را نصب کنید.
 
-### All-in-One Installers
+### نصب همه‌چی
 
-The solutions listed above mainly handle PHP itself, and do not supply things like [Apache][apache], [Nginx][nginx] or a SQL server.
-"All-in-one" solutions such as [MAMP][mamp-downloads] and [XAMPP][xampp] will install these other bits of software for
-you and tie them all together, but ease of setup comes with a trade-off of flexibility.
+روش‌های بالا بیشتر روی خود پچپ تمرکز دارند و چیزهایی مثل [Apache][apache] یا [Nginx][nginx] یا سرور SQL را نصب نمی‌کنند.
+روش‌های نصب همه‌چی مثل [MAMP][mamp-downloads] و [XAMPP][xampp] این نرم‌افزارها را هم برایتان نصب می‌کنند. ولی حواستان باشد که سادگی نصب می‌تواند منعطف بودن‌تان را کم کند.
 
 [Homebrew]: https://brew.sh/
 [Homebrew PHP]: https://github.com/Homebrew/homebrew-php#installation
