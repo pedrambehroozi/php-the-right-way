@@ -3,25 +3,18 @@ isChild: true
 anchor:  windows_setup
 ---
 
-## Windows Setup {#windows_setup_title}
+## نصب روی ویندوز {#windows_setup_title}
 
-You can download the binaries from [windows.php.net/download][php-downloads]. After the extraction of PHP, it is recommended to set the [PATH][windows-path] to the root of your PHP folder (where php.exe is located) so you can execute PHP from anywhere.
+می‌توانید باینری‌های پچپ را از [windows.php.net/download][php-downloads] بگیرید. بعد از این که آنها را اکسترکت کردید بهتر است [PATH][windows-path] را 
+روی دایرکتوری پچپ تنظیم کنید (همان جایی که php.exe وجود دارد) تا بتوانید پچپ را از هر کجای سیستم اجرا کنید.
 
-For learning and local development, you can use the built in webserver with PHP 5.4+ so you don't need to worry about
-configuring it. If you would like an "all-in-one" which includes a full-blown webserver and MySQL too then tools such
-as the [Web Platform Installer][wpi], [XAMPP][xampp], [EasyPHP][easyphp], [OpenServer][openserver] and [WAMP][wamp] will
-help get a Windows development environment up and running fast. That said, these tools will be a little different from
-production so be careful of environment differences if you are working on Windows and deploying to Linux.
+برای یاد گرفتن و کد زدن روی لوکال، می‌توانید از وب سرور داخلی پچپ 5.4 به بعد استفاده کنید و نگران تنظیم کردن وب سرور نباشید. اگر همه‌چی از جمله یک وب سرور کامل و MySql می‌خواهید ابزارهایی مثل [Web Platform Installer][wpi] و [XAMPP][xampp] و [EasyPHP][easyphp] و [OpenServer][openserver] و [WAMP][wamp] محیط ویندوز را خیلی سریع برای کد زدن آماده می‌کنند. اما بدانید که ابزارها روی محیط پروداکشن کمی متفاوت هستند. پس اگر روی ویندوز کد می‌زنید و روی لینوکس اجرا می‌کنید حواستان را جمع کنید.
 
-If you need to run your production system on Windows, then IIS7 will give you the most stable and best performance. You
-can use [phpmanager][phpmanager] (a GUI plugin for IIS7) to make configuring and managing PHP simple. IIS7 comes with
-FastCGI built in and ready to go, you just need to configure PHP as a handler. For support and additional resources
-there is a [dedicated area on iis.net][php-iis] for PHP.
+اگر محیط پروداکشن‌تان هم روی ویندوز است، IIS7 انتخاب خوبی است. برای تنظیم و مدیریت آسان پچپ می‌توانید از [phpmanager][phpmanager] (یک پلاگین GUI برای IIS7) استفاده کنید. IIS7 درون خود FastCGI را دارد. فقط کافی است پچپ را به عنوان یک handler تنظیم کنید. اگر اطلاعات بیشتر می‌خواهید یک [صفحه اختصاصی برای پچپ در سایت iis.net][php-iis] وجود دارد.
 
-Generally running your application on different environment in development and production can lead to strange bugs popping up when you go
-live. If you are developing on Windows and deploying to Linux (or anything non-Windows) then you should consider using a [Virtual Machine](/#virtualization_title).
+کلاً اگر محیط کد زدن و پروداکشن‌تان فرق داشته باشد ممکن است به باگ‌های عجیب و غریب بخورید. اگر روی ویندوز کد می‌زنید و روی لینوکس (یا هر چیزی جز ویندوز) دیپلوی می‌کنید به خودتان لطف کنید و از یک [ماشین مجازی](#virtualization_title) استفاده کنید.
 
-Chris Tankersley has a very helpful blog post on what tools he uses to do [PHP development using Windows][windows-tools].
+کریس تانکرسلی یک پست وبلاگ خیلی خوب دارد راجع به این که چطوری [روی ویندوز کد پچپ بزنید][windows-tools].
 
 [easyphp]: http://www.easyphp.org/
 [phpmanager]: http://phpmanager.codeplex.com/
