@@ -1,18 +1,18 @@
 ---
-title:   Common Directory Structure
+title:   ساختار دایرکتوری‌ها
 isChild: true
 anchor:  common_directory_structure
 ---
 
-## Common Directory structure {#common_directory_structure_title}
+## ساختار دایرکتوری‌ها {#common_directory_structure_title}
 
-A common question among those starting out with writing programs for the web is, "where do I put my stuff?" Over the years, this answer has consistently been "where the `DocumentRoot` is." Although this answer is not complete, it's a great place to start.
+آنهایی که تازه کد زدن برای وب را شروع می‌کنند یک سوال رایج دارند: «کدها را کجا بگذارم؟» جوابش همیشه این بوده است: «هر جایی که `DocumentRoot` هست». گرچه جواب کاملی نیست، نقطه‌ی شروع خوبی است.
 
-For security reasons, configuration files should not be accessible by a site's visitors; therefore, public scripts are kept in a public directory and private configurations and data are kept outside of that directory.
+به خاطر مسائل امنیتی، بازدیدکنندگان وبسایت نباید بتوانند به فایل‌های کانفیگ دسترسی داشته باشند؛ بنابراین اسکریپت‌های عمومی توی دایرکتوری‌های عمومی و کانفیگ‌های داخلی و دیتا خارج از این دایرکتوری عمومی قرار می‌گیرند.
 
-For each team, CMS, or framework one works in, a standard directory structure is used by each of those entities. However, if one is starting a project alone, knowing which filesystem structure to use can be daunting.
+هر تیم، CMS یا فریم‌ورک از یک ساختار دایرکتوری استاندارد استفاده می‌کند. اما اگر کسی یک پروژه را تنهایی شروع کند انتخاب ساختار فایل می‌تواند سخت باشد.
 
-[Paul M. Jones] has done some fantastic research into common practices of tens of thousands of github projects in the realm of PHP. He has compiled a standard file and directory structure, the [Standard PHP Package Skeleton], based on this research. In this directory structure, `DocumentRoot` should point to `public/`, unit tests should be in the `tests/` directory, and third party libraries, as installed by [composer], belong in the `vendor/` directory. For other files and directories, abiding by the [Standard PHP Package Skeleton] will make the most sense to contributors of a project.
+[پاول ام. جونز][Paul M. Jones] ده‌ها هزار پروژه‌ی گیت‌هاب مبتنی بر پچپ را بررسی کرده و یک ساختار فایل استاندارد از میان آنها درآورده: [اسکلت استاندارد پکیج‌های پچپ][Standard PHP Package Skeleton]. در این ساختار، `DocumentRoot` باید در دایرکتوری `public/` باشد، یونیت تست‌ها در دایرکتوری `tests/` و پکیج‌های دیگران که توسط [composer] نصب می‌شوند در دایرکتوری `vendor/` قرار می‌گیرد. برای باقی فایل‌ها و دایرکتوری‌ها طبق [اسکلت استاندارد پکیج‌های پچپ][Standard PHP Package Skeleton] خود توسعه‌دهندگان پروژه باید تصمیم بگیرند.
 
 [Paul M. Jones]: http://paul-m-jones.com/
 [Standard PHP Package Skeleton]: https://github.com/php-pds/skeleton
