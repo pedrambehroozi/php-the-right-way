@@ -1,53 +1,55 @@
 ---
+title: الگوهای برنامه‌نویسی
 isChild: true
 anchor:  programming_paradigms
 ---
 
-## Programming Paradigms {#programming_paradigms_title}
+## الگوهای برنامه‌نویسی {#programming_paradigms_title}
 
-PHP is a flexible, dynamic language that supports a variety of programming techniques. It has evolved dramatically over
-the years, notably adding a solid object-oriented model in PHP 5.0 (2004), anonymous functions and namespaces in
-PHP 5.3 (2009), and traits in PHP 5.4 (2012).
+پچپ یک زبان منعطف و پویا است که از تکنیک‌های گوناگونی پشتیبانی می‌کند. در طول سالیان تغییرات زیادی کرده است، یکی از 
+شاخص‌ترین این تغییرات اضافه شدن یک مدل درست و حسابی شی‌گرایی در پچپ 5.0 (در سال 2004)، فانکشن‌های بی‌نام و نیم‌اسپیس‌ها در 
+5.3 (سال 2009) و traitها در 5.4 (سال 2012) است.
 
-### Object-oriented Programming
+### برنامه‌نویسی شی‌گرا
 
-PHP has a very complete set of object-oriented programming features including support for classes, abstract classes,
-interfaces, inheritance, constructors, cloning, exceptions, and more.
+پچپ مجموعه‌ی کاملی از فیچرهای برنامه‌نویسی شی‌گرا دارد شامل پشتیبانی از کلاس‌ها، کلاس‌های ابسترکت، اینترفیس‌ها، وراثت،
+سازنده‌ها (constructorها)، کلون کردن، اکسپشن‌ها و خیلی چیزهای دیگر
 
-* [Read about Object-oriented PHP][oop]
-* [Read about Traits][traits]
+* [درباره شی‌گرایی در پچپ بخوانید][oop]
+* [درباره traitها بخوانید][traits]
 
-### Functional Programming
+### برنامه‌نویسی فانکشنال
 
-PHP supports first-class functions, meaning that a function can be assigned to a variable. Both user-defined and
-built-in functions can be referenced by a variable and invoked dynamically. Functions can be passed as arguments to
-other functions (a feature called _Higher-order Functions_) and functions can return other functions.
+پچپ از فانکشن‌های دست‌اول (first-class) پشتیبانی می‌کند، به این معنی که یک فانکشن می‌تواند درون یک متغیر قرار گیرد. فانکشن‌های تعریف‌شده توسط کابر
+و فانکشن‌های داخلی هر دو می‌توانند توسط یک متغیر ارجاع داده شوند و به صورت داینامیک اجرا شوند. فانکشن‌ها می‌توانند به عنوان 
+آرگومان به دیگر فانکشن‌ها فرستاده شوند (فیچری به اسم _فانکشن‌های رده‌بالا) و فانکشن‌ها می‌توانند یک فانکشن به عنوان خروجی
+داشته باشند.
 
-Recursion, a feature that allows a function to call itself, is supported by the language, but most PHP code
-is focused on iteration.
+بازگشت، فیچری که اجازه می‌دهد یک فانکشن خودش را صدا بزند، هم در پچپ پشتیبانی می‌شود. اما اغلب کدهای پچپ روی تکرار (iteration)
+تمرکز دارند.
 
-New anonymous functions (with support for closures) are present since PHP 5.3 (2009).
+فانکشن‌های بی‌نام جدید (با پشتیبانی از closureها) از نسخه‌ی 5.3 (سال 2009) در دسترس هستند.
 
-PHP 5.4 added the ability to bind closures to an object's scope and also improved support for callables such that they
-can be used interchangeably with anonymous functions in almost all cases.
+نسخه‌ی 5.4 این قابلیت را اضافه کرده که closureها به اسکوپ یک شیء اضافه شوند و همچنین پشتیبانی از صدازدنی‌ها (callables) را 
+بهبود داده، این‌طور که می‌توانید صدازدنی‌ها را تقریبا در هر شرایطی به جای فانکشن‌های بی‌نام به کار ببرید.
 
-* Continue reading on [Functional Programming in PHP](/pages/Functional-Programming.html)
-* [Read about Anonymous Functions][anonymous-functions]
-* [Read about the Closure class][closure-class]
-* [More details in the Closures RFC][closures-rfc]
-* [Read about Callables][callables]
-* [Read about dynamically invoking functions with `call_user_func_array()`][call-user-func-array]
+* درباره [برنامه‌نویسی فانکشنال در پچپ](/pages/Functional-Programming.html) بیشتر بخوانید.
+* [درباره فانکشن‌های بی‌نام بخوانید][anonymous-functions]
+* [راجع به کلاس‌های Closure بخوانید][closure-class]
+* [جزئیات بیشتر درباره RFC مربوط به Closureها][closures-rfc]
+* [درباره صدازدنی‌ها بخوانید][callables]
+* [درباره فانکشن‌هایی که به صورت داینامیک توسط `call_user_func_array` اجرا می‌شوند بخوانید][call-user-func-array]
 
-### Meta Programming
+### برنامه‌نویسی متا
 
-PHP supports various forms of meta-programming through mechanisms like the Reflection API and Magic Methods. There are
-many Magic Methods available like `__get()`, `__set()`, `__clone()`, `__toString()`, `__invoke()`, etc. that allow
-developers to hook into class behavior. Ruby developers often say that PHP is lacking `method_missing`, but it is
-available as `__call()` and `__callStatic()`.
+پچپ از انواع گوناگونی از برنامه‌نویسی متا پشتیبانی می‌کند که توسط مکانیزمی مثل Reflection API و متدهای جادویی قابل پیاده‌سازی
+هستند. متدهای جادویی زیادی مثل `__get()` و `__set()` و `__clone()` و `__toString()` و `__invoke()` و غیره وجود دارند.
+این متدها به برنامه‌نویس‌ها اجازه می‌دهند تغییراتی در رفتار کلاس ایجاد کنند. برنامه‌نویس‌های روبی اغلب می‌گویند پچپ `method_missing`
+ندارد اما این کار با استفاده از `__call()` و `__callStatic()` امکان‌پذیر است.
 
-* [Read about Magic Methods][magic-methods]
-* [Read about Reflection][reflection]
-* [Read about Overloading][overloading]
+* [درباره متدهای جادویی بخوانید][magic-methods]
+* [درباره رفلکشن بخوانید][reflection]
+* [درباره سربارگذاری بخوانید][overloading]
 
 
 [oop]: https://secure.php.net/language.oop5
