@@ -1,31 +1,33 @@
 ---
+title: نیم‌اسپیس‌ها
 isChild: true
 anchor:  namespaces
 ---
 
-## Namespaces {#namespaces_title}
+## نیم‌اسپیس‌ها {#namespaces_title}
 
-As mentioned above, the PHP community has a lot of developers creating lots of code. This means that one library's PHP
-code might use the same class name as another. When both libraries are used in the same namespace, they collide
-and cause trouble.
+در بالا اشاره شد که جامعه پچپ برنامه‌نویس‌های زیادی دارد که کدهای زیادی می‌نویسند. این یعنی یک کتابخانه پچپ ممکن است 
+برای یک کلاس از اسمی استفاده کند که کتابخانه دیگر هم استفاده کرده است. وقتی هر دو کتابخانه در یک پروژه استفاده شوند
+کلاس‌ها تداخل پیدا می‌کنند و خطا می‌دهند.
 
-_Namespaces_ solve this problem. As described in the PHP reference manual, namespaces may be compared to operating
-system directories that _namespace_ files; two files with the same name may co-exist in separate directories. Likewise,
-two PHP classes with the same name may co-exist in separate PHP namespaces. It's as simple as that.
+_نیم‌اسپیس‌ها_ این مشکل را حل می‌کنند. همانطور که در راهنمای پچپ آمده است، نیم‌اسپیس‌ها را می‌توان با دایرکتوری سیستم‌عامل مقایسه کرد
+که فایل‌ها را با یک _نیم‌اسپیس_ از هم جدا می‌کنند؛ دو فایل با یک اسم می‌توانند در دایرکتوری‌های جداگانه قرار گیرند. 
+درست مثل همین، دو کلاس پچپ با یک اسم می‌توانند در نیم‌اسپیس‌های جداگانه استفاده شوند. به همین سادگی.
 
-It is important for you to namespace your code so that it may be used by other developers without fear of colliding
-with other libraries.
+مهم است که کدتان را در نیم‌اسپیسی بگذارید که تکراری نباشد تا برنامه‌نویس‌ها در هر کجا بتوانند بدون نگرانی از کدتان استفاده
+کنند.
 
-One recommended way to use namespaces is outlined in [PSR-4][psr4], which aims to provide a standard file, class and
-namespace convention to allow plug-and-play code.
+یک راه پیشنهادی برای استفاده از نیم‌اسپیس‌ها در [PSR-4][psr4] آورده شده است. این PSR راهنمایی است برای استاندارد کردن
+فایل‌ها، کلاس‌ها و نیم‌اسپیس‌ها طوری که بتوان از آنها در همه جا استفاده کرد.
 
-In October 2014 the PHP-FIG deprecated the previous autoloading standard: [PSR-0][psr0]. Both PSR-0 and PSR-4 are still perfectly usable.  The latter requires PHP 5.3, so many PHP 5.2-only projects implement PSR-0.
+در اکتر ۲۰۱۴ PHP-FIG استاندارد [PSR-0][psr0] را از دور خارج کرد. هم PSR-0 و هم PSR-4 را می‌شود استفاده کرد. فرق‌شان این است
+که PSR-4 برای نسخه‌های 5.3 به بعد است. اغلب کدهای پچپ در نسخه‌های 5.2 به قبل از PSR-0 پیروی می‌کنند.
 
-If you're going to use an autoloader standard for a new application or package, look into PSR-4.
+اگر دنبال استاندارد autoload برای یک پروژه یا پکیج جدید هستید، بروید سراغ PSR-4.
 
-* [Read about Namespaces][namespaces]
-* [Read about PSR-0][psr0]
-* [Read about PSR-4][psr4]
+* [درباره نیم‌اسپیس‌ها بخوانید][namespaces]
+* [درباره PSR-0 بخوانید][psr0]
+* [درباره PSR-4 بخوانید][psr4]
 
 
 [namespaces]: https://secure.php.net/language.namespaces
